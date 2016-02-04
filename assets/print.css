@@ -1,0 +1,28 @@
+@media print{
+	 body 
+        {
+            background-color:#FFFFFF; 
+            border: solid 1px black ;
+            margin: 1em;  /* the margin on the content before printing */
+       }
+	@page 
+        {
+            size: auto;   /* auto is the current printer page size */
+            margin: 1mm;  /* this affects the margin in the printer settings */
+        }
+	.print{
+		display: none;
+	}
+	.padtopbottom{
+		padding: 1em 0;
+	}
+	.logo{
+		float: left;
+	}
+	.logo-text{
+		float: left;
+		margin-top: 0.5em;
+		margin-left: 1em;
+	}
+	
+}

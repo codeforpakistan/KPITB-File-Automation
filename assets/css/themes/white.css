@@ -1,0 +1,108 @@
+.page-content {
+    background: #1f6325;
+}
+
+.navbar .logo-box {
+    background: #fff;
+}
+
+.navbar .logo-box a {
+    color: #ffffff;
+    background: #269703;
+    text-align: left;
+}
+
+.sidebar {
+    background: #1f6325;
+}
+
+.sidebar-header {
+    background: #1f6325;
+}
+
+.sidebar-profile span small {
+    color: #ccc;
+    font-size: 13px;
+}
+.info-box-stats p{
+    margin-top: 2em;
+}
+.info-box-icon{
+    margin-top: 1em;
+}
+.info-box-icon label{
+    font-weight: 600;
+    color: #222;
+    padding-right: 2em;
+}
+.info-box-icon label span{
+    /*margin-left: 3em;*/
+}
+.menu {
+    background: #1f6325;
+}
+
+.menu.accordion-menu a {
+    color: #fff;
+    width: 100%;
+}
+
+.menu.accordion-menu > li > a:hover {
+	background: #009440;
+    color: #fff;
+}
+
+.menu.accordion-menu > li.active > a,
+.menu.accordion-menu > li.active.open > a {
+    border-left:2px solid #3ee809;
+	background: #009440;
+    color: #fff;
+}
+
+.small-sidebar:not(.page-sidebar-fixed) .accordion-menu li.droplink:hover > a,
+.horizontal-bar .accordion-menu > li.droplink:hover > a,
+.menu.accordion-menu ul,
+.menu.accordion-menu li.open > a,
+.hover-menu .accordion-menu > li.droplink:hover > a {
+    background: #009440;
+    color: #fff;
+}
+
+.menu.accordion-menu ul li a:hover,
+.menu.accordion-menu ul li.active a {
+	background: #1f6325;
+    color: #fff;
+}
+
+.menu.accordion-menu ul li a {
+    color: #899dc1;
+}
+.menu.accordion-menu > li > a > p{
+    margin-right: 0em;
+    padding-left: 4em;
+}
+/*  Login Page  */
+.loginpage{
+    color: #222;
+    margin: 0 1em;
+}
+.NoPadding{
+    padding: 0 !important;
+}
+.NoPadTop{
+    margin-top: 0 !important;
+}
+.NormalHeight{
+    height: 545px !important;
+}
+.bread h3{
+    color: #333;
+}
+.bread li a{
+    color: #333;
+}
+/*.loginpage p{
+    color: #222;
+    padding: 0 1em;
+
+}*/
