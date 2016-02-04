@@ -4,7 +4,7 @@ Khyber PukhtoonKhwa Information &amp; Technology Project
 
 An advanced document management system for the KP IT Board, something that will replace conventional file management, increasing efficiency of the overall intergovernmental processes 100 times!
 
-## Impact on Civic:
+## Civic Impact
 
 #### The expected advantages from this system are :
 - The resources to be used will get minimized.
