@@ -71,8 +71,8 @@
                                     </div>
                                     <div class="clearfix"></div>
                                     <div class="form-group col-md-8 col-lg-4">
-                                        <label for="">Password</label>
-                                        <input type="password" name="password" value="<?php echo $staff_records[0]->password; ?>" class="form-control" placeholder="Password">
+                                        <label for="">New Password</label>
+                                        <input type="password" name="password"  class="form-control" placeholder="Enter New Password">
                                     </div>
                                     <div class="clearfix"></div>
                                     <div class="form-group col-md-8 col-lg-4">

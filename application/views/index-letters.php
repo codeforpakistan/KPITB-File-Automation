@@ -18,10 +18,15 @@ $(document).ready(function(){
 <div class="page-inner">
    
     <div id="main-wrapper" style="background:#fff important;">
-     <span class="pull-left" style="padding:1em;">
+     <?php 
+        if(check_permission('create_letter'))
+        {
+    ?>
+     <span class="pull-left" style="padding:1em;">    
         <button id="ShowLetter" class="btn btn-success">New Letter</button>
         <button id="Cancel" style="display:none;" class="btn btn-default">Cancel</button>
     </span>
+    <?php } ?>
     <div class="col-lg-12 col-md-12" id="showletter" style="display:none;">
         <div class="panel info-box panel-white">
             <div class="panel-body">

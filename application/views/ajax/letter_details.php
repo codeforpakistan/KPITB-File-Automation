@@ -69,20 +69,30 @@ if (!empty($Letters)) {
 				<?php } elseif ($Approval == 2) { ?>
 					<a class="btn btn-danger btn-xs"><i class="fa fa-close"> </i> Rejected</a>
 				<?php } else{ ?> 
+					
+					<?php if(check_permission('approve_letter')){ ?>
 					<a class="btn btn-success btn-xs" id="approve" onclick="ApproveLetter(<?php echo $Note;?>)"><i class="fa fa-check"> </i> Approve</a>
+					<?php } ?>
+					<?php if(check_permission('disapprove_letter')){ ?>
 					<a class="btn btn-danger btn-xs" id="disapprove" onclick="DisapproveLetter(<?php echo $Note;?>)"><i class="fa fa-close"> </i> Disapprove</a>
+					<?php } ?>
+
 				<?php }?>
 				</td>
 			</tr>
             <tr>
 				<td>
+					<?php if(check_permission('print_letter')){ ?>
 					<button id="print" class="btn btn-info btn-xs"> <i class="fa fa-print"></i> Print</button>
+					<?php } ?>
 				<?php 
 				$Archieve = $EachPost->archieve;
 				if ($Archieve == 1) { ?>
 					<a class="btn btn-primary btn-xs"><i class="fa fa-dropbox"> </i> Archieved</a>
 				<?php }else{ ?>
+					<?php if(check_permission('archieve_letter')){ ?>
 					<a class="btn btn-primary btn-xs" id="AR" onclick="Archieve(<?php echo $Note;?>)"><i class="fa fa-dropbox"> </i> Archieve</a>
+					<?php } ?>
 				<?php }?>
 					<a class="btn btn-primary btn-xs" style="display:none;" id="Ar"><i class="fa fa-dropbox"> </i> Archieved</a>
 				</td>
@@ -153,15 +163,19 @@ if (!empty($Comments)) {
 			<button type="button" onclick="SendTo(<?php echo $ThisUserID . ',' . $Note ?>,document.getElementById('SendTo').value)" class="btn btn-info pull-right">Send to</button>
  	    </td>
 	<?php } elseif (!empty($Feta) == true) {?>
+	<?php if(check_permission('comment_letter')){ ?>
 		<td>
 			<textarea class="form-control" placeholder="Comments1" id="comment"></textarea>
 			<button class="btn-xs btn btn-info pull-right" onclick="Comment(<?php echo $ThisUserID . ',' . $Note; ?>,document.getElementById('comment').value)">Comment</button>
 		</td>
+	<?php } ?>
 	<?php }} else {?>
+	<?php if(check_permission('comment_letter')){ ?>
 	<td>
 		<textarea class="form-control" placeholder="Comments" id="comment"></textarea>
 		<button class="btn-xs btn btn-info pull-right" onclick="Comment(<?php echo $ThisUserID . ',' . $Note ?>,document.getElementById('comment').value)">Comment</button>
 	</td>
+	<?php } ?>
 	    </tr>
 <?php }
 ?>

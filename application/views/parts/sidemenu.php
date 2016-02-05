@@ -50,19 +50,23 @@ setInterval(Notes, 5000);
                 <p>Note Sheet <i class="badge badge-success pull-right" style="background:green;color:#fff; padding:0 0.7em;" id="note"></i></p>
             </a>
         </li>
+        <?php if($this->session->userdata('id')==1 or check_permission('sent_letters')){ ?>
         <li>
             <a href="<?php echo base_url();?>kpitb_letters/Sendletter" class="waves-effect waves-button">
                 <span class="menu-icon fa fa-file-o"></span>
                 <p>Sent Letters</p>
             </a>
         </li>
+        <?php } ?>
+        <?php if($this->session->userdata('id')==1 or check_permission('sent_notes')){ ?>
         <li>
             <a href="<?php echo base_url();?>kpitb_notes/SendNotes" class="waves-effect waves-button">
                 <span class="menu-icon fa fa-file-o"></span>
                 <p>Sent Note Sheet</p>
             </a>
         </li>
-        <?php if($this->session->userdata('id')==1){ ?>
+        <?php } ?>
+        <?php if($this->session->userdata('id')==1 or check_permission('staff_list')){ ?>
         <li>
             <a href="<?php echo base_url();?>staff/index" class="waves-effect waves-button">
                 <span class="menu-icon fa fa-users fa-flip-horizontal"></span>
@@ -70,12 +74,14 @@ setInterval(Notes, 5000);
             </a>
         </li>
         <?php }?>
+        <?php if($this->session->userdata('id')==1 or check_permission('log_menu')){ ?>
         <li>
             <a href="<?php echo base_url();?>kpitb_panel/logs" class="waves-effect waves-button">
                 <span class="menu-icon fa fa-lock fa-flip-horizontal"></span>
                 <p>Logs</p>
             </a>
         </li>
+        <?php }?>
 
     </ul>
 </div><!-- Page Sidebar Inner -->

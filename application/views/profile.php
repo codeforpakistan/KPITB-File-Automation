@@ -74,7 +74,7 @@
                                     </tr>
                                     <tr>
                                         <th>Signature</th>
-                                        <td><img width="250" class="img img-thumbnail img-responsive" src="<?php echo base_url();?>assets/VisualData/Signatures/<?php echo $info->signature;?>" alt=""></td>
+                                        <td><img style="height:100px;width:400px;;" class="img img-thumbnail img-responsive" src="<?php echo base_url();?>assets/VisualData/<?php echo $info->signature;?>" alt=""></td>
                                     </tr>
                                     <tr>
                                         <th>Account Created On</th>

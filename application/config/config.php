@@ -16,7 +16,7 @@
 | environments.
 |
 */
-$config['base_url'] = 'http://kpitb.dev/';
+$config['base_url'] = 'http://localhost/kpitb/';
 
 /*
 |--------------------------------------------------------------------------

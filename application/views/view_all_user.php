@@ -22,7 +22,12 @@ $this->load->view('parts/sidemenu');?>
                     <div class="col-lg-12 col-md-12">
                             <div class="panel panel-white">
                                 <div class="panel-heading clearfix">
+                                    <?php 
+                                    if(check_permission('create_staff'))
+                                    {
+                                    ?>
                                     <a href="<?php echo base_url();?>staff/create_staff" class="btn btn-success btn-xs pull-right"><span class="fa fa-plus"> </span> Employee</a>
+                                    <?php } ?>
                                 </div>
                                 <div class="panel-body">
                                    <div class="table-responsive">
@@ -41,10 +46,31 @@ $this->load->view('parts/sidemenu');?>
                                                 <td><?php echo $staff->first_name." ".$staff->last_name; ?></td>
                                                 <td><?php echo $staff->designation; ?></td>
                                                 <td><?php echo $staff->email; ?></td>
-                                                <td style="width:230px;">
+                                                <td style="width:250px;">
+                                                    <?php 
+                                                    if(check_permission('delete_staff'))
+                                                    {
+                                                    ?>
                                                     <a href="<?php echo site_url(); ?>/staff/delete/<?php echo $staff->id; ?>" class="btn btn-danger btn-xs">Delete</a>
+                                                    <?php 
+                                                    }
+                                                    if(check_permission('update_staff'))
+                                                    {
+                                                    ?>
                                                     <a href="<?php echo site_url(); ?>/staff/update_form/<?php echo $staff->id; ?>" class="btn btn-primary btn-xs">Update</a>
+                                                    <?php 
+                                                    }
+                                                    if(check_permission('set_staff_permissions'))
+                                                    {
+                                                    ?>
+                                                    <a href="<?php echo site_url(); ?>/staff/permissions/<?php echo $staff->id; ?>" class="btn btn-success btn-xs">Permissions</a>
+                                                    <?php 
+                                                    }
+                                                    if(check_permission('view_staff'))
+                                                    {
+                                                    ?>
                                                     <a href="<?php echo site_url(); ?>/kpitb_panel/profile/<?php echo $staff->id; ?>" class="btn btn-info btn-xs">View</a>
+                                                    <?php } ?>
                                                 </td>
                                             </tr>
                                             <?php }} ?>

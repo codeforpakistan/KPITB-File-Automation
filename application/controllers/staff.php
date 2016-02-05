@@ -95,6 +95,28 @@ class staff extends CI_Controller
 		$this->db->update("staff",$data);	
 		redirect(site_url()."/staff");
 	}
+		public function permissions($id)
+	{
+		$data['staff_id'] 		= $id;
+		$data['permissions'] 	= $this->db->query("SELECT p.name,p.id as p_id,a.staff_id as flage FROM permission p left join permission_allocated a on a.right_id = p.id and a.staff_id = $id")->result();
+		$this->load->view("permissions",$data);	
+	}
+
+	public function insert_permissions()
+	{
+		$staff_id 			= $this->input->post('staff_id');
+		$permissions_json 	= $this->input->post('permissions');
+		$permissions 		= json_decode($permissions_json);
+		$this->db->where('staff_id',$staff_id);
+		$this->db->delete('permission_allocated');
+		foreach($permissions as $value)
+		{
+			$data['right_id'] = $value->id;
+			$data['staff_id'] = $staff_id;
+			$this->db->insert('permission_allocated',$data);
+		}
+		$this->index();
+	}
 
 }
 ?>

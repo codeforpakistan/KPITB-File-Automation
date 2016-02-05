@@ -18,6 +18,10 @@ $this->load->view('parts/sidemenu');?>
                         </div>
                     </div>
                 </div>
+                    <?php
+                    if(check_permission('log_note'))
+                    {
+                    ?>
                     <!-- Letters Ends Here -->
                     <div class="col-lg-4 col-md-4">
                         <div class="panel info-box panel-white">
@@ -33,6 +37,11 @@ $this->load->view('parts/sidemenu');?>
                             </div>
                         </div>
                     </div>
+                    <?php 
+                    }
+                    if(check_permission('log_letter'))
+                    {
+                    ?>
                     <!-- End Of Notes -->
                     <div class="col-lg-4 col-md-6">
                     <div class="panel info-box panel-white">
@@ -48,6 +57,12 @@ $this->load->view('parts/sidemenu');?>
                         </div>
                     </div>
                     </div>
+
+                    <?php 
+                    }
+                    if(check_permission('log_login'))
+                    {
+                    ?>
                 <!-- End This -->
                     <div class="col-lg-4 col-md-4">
                         <a href="<?php echo base_url();?>kpitb_panel/Login_logs">
@@ -63,6 +78,9 @@ $this->load->view('parts/sidemenu');?>
                         </div>
                         </a>
                     </div>
+                    <?php 
+                    }
+                    ?>
                 </div>
                 <!-- Main Wrapper -->
                 <div class="page-footer">
