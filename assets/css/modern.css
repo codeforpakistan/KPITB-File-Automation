@@ -3347,7 +3347,6 @@ body:not(.page-horizontal-bar):not(.small-sidebar) .menu.accordion-menu a {
 .menu.accordion-menu a p {
     line-height: 1.42857143!important;
     margin: 0;
-    text-align: left;
 }
 
 .menu.accordion-menu a span.menu-icon {
@@ -3719,7 +3718,7 @@ body:not(.page-horizontal-bar):not(.small-sidebar) .menu.accordion-menu a {
 
 .page-inner {
 	padding: 0 0 50px 0;
-    background: #f8f8f8;
+    background: #F1F4F9;
     position: relative;
 }
 
@@ -4476,7 +4475,6 @@ body:not(.page-horizontal-bar):not(.small-sidebar) .menu.accordion-menu a {
 
 .mailbox-content {
     overflow: hidden;
-    box-shadow: 0px 0px 2px rgba(0,0,0,0.3);
 }
 
 .mailbox-content table thead tr th {
@@ -4485,7 +4483,6 @@ body:not(.page-horizontal-bar):not(.small-sidebar) .menu.accordion-menu a {
 
 .mailbox-content table tbody tr td {
     cursor: pointer;
-    background: #f8f8f8;
 }
 
 .mailbox-content table tbody tr:hover {
@@ -4496,9 +4493,7 @@ body:not(.page-horizontal-bar):not(.small-sidebar) .menu.accordion-menu a {
     background: #F9F9F9;
     color: #7F7F7F;
 }
-.mailbox-content table tbody th.read {
-    background: #f8f8f8;
-}
+
 .mailbox-content table tbody tr.checked {
     background: #FFFFCC;
 }

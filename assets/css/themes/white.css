@@ -78,8 +78,7 @@
     color: #899dc1;
 }
 .menu.accordion-menu > li > a > p{
-    margin-right: 0em;
-    padding-left: 4em;
+    margin-right: 2em;
 }
 /*  Login Page  */
 .loginpage{

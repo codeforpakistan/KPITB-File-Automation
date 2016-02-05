@@ -16,7 +16,7 @@
 | environments.
 |
 */
-$config['base_url'] = 'http://localhost/kpitb/';
+$config['base_url'] = 'http://localhost/kpitb/KPITB-File-Automation/';
 
 /*
 |--------------------------------------------------------------------------

@@ -1742,9 +1742,9 @@
   };
 
   var editor = renderer.create('<div class="note-editor note-frame panel panel-default"/>');
-  var toolbar = renderer.create('<div class="note-toolbar panel-head"/>');
+  var toolbar = renderer.create('<div class="note-toolbar panel-heading"/>');
   var editingArea = renderer.create('<div class="note-editing-area"/>');
-  var codable = renderer.create('<textarea class="note-codable" style="display:none;"/>');
+  var codable = renderer.create('<textarea class="note-codable"/>');
   var editable = renderer.create('<div class="note-editable panel-body" contentEditable="true"/>');
   var statusbar = renderer.create([
     '<div class="note-statusbar">',
@@ -5306,8 +5306,21 @@
         }).render();
       });
 
-     
-  
+      context.memo('button.picture', function () {
+        return ui.button({
+          contents: ui.icon(options.icons.picture),
+          tooltip: lang.image.image,
+          click: context.createInvokeHandler('imageDialog.show')
+        }).render();
+      });
+
+      context.memo('button.video', function () {
+        return ui.button({
+          contents: ui.icon(options.icons.video),
+          tooltip: lang.video.video,
+          click: context.createInvokeHandler('videoDialog.show')
+        }).render();
+      });
 
       context.memo('button.hr', function () {
         return ui.button({
@@ -5317,7 +5330,24 @@
         }).render();
       });
 
-     
+      context.memo('button.fullscreen', function () {
+        return ui.button({
+          className: 'btn-fullscreen',
+          contents: ui.icon(options.icons.arrowsAlt),
+          tooltip: lang.options.fullscreen,
+          click: context.createInvokeHandler('fullscreen.toggle')
+        }).render();
+      });
+
+      context.memo('button.codeview', function () {
+        return ui.button({
+          className: 'btn-codeview',
+          contents: ui.icon(options.icons.code),
+          tooltip: lang.options.codeview,
+          click: context.createInvokeHandler('codeview.toggle')
+        }).render();
+      });
+
       context.memo('button.redo', function () {
         return ui.button({
           contents: ui.icon(options.icons.redo),

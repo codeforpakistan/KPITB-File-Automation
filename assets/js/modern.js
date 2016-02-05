@@ -40,7 +40,10 @@ $( document ).ready(function() {
     // Waves
     Waves.displayEffect();
     
-   
+    // tooltips
+    $( '[data-toggle~="tooltip"]' ).tooltip({
+        container: 'body'
+    });
     
     // Switchery
     var elems = Array.prototype.slice.call(document.querySelectorAll('.js-switch'));
@@ -103,7 +106,18 @@ $( document ).ready(function() {
         }
     });
     
-   
+    // sortable
+    $(".sortable").sortable({
+        connectWith: '.sortable',
+        items: '.panel',
+        helper: 'original',
+        revert: true,
+        placeholder: 'panel-placeholder',
+        forcePlaceholderSize: true,
+        opacity: 0.95,
+        cursor: 'move'
+    });
+    
     // Uniform
     var checkBox = $("input[type=checkbox]:not(.switchery), input[type=radio]:not(.no-uniform)");
     if (checkBox.size() > 0) {
@@ -216,7 +230,9 @@ $( document ).ready(function() {
     sidebarAndContentHeight();
     window.onresize = sidebarAndContentHeight;
     // Slimscroll
-
+    $('.slimscroll').slimscroll({
+        allowPageScroll: true
+    });
     // Layout Settings
     var fixedHeaderCheck = document.querySelector('.fixed-header-check'),
         fixedSidebarCheck = document.querySelector('.fixed-sidebar-check'),
