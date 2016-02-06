@@ -14,7 +14,7 @@ An advanced document management system for the KP IT Board, something that will 
 
 ## Screenshots
 ![alt tag](https://github.com/codeforpakistan/KPITB-File-Automation/blob/master/assets/images/1.PNG)
-![alt tag](https://github.com/codeforpakistan/KPITB-File-Automation/blob/master/assets/images/2.PNG)
+![alt tag](https://github.com/codeforpakistan/KPITB-File-Automation/blob/master/assets/images/5.PNG)
 ![alt tag](https://github.com/codeforpakistan/KPITB-File-Automation/blob/master/assets/images/3.PNG)
 
 ## Development 
