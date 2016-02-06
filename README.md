@@ -2,7 +2,7 @@
 # KPITB-File-Automation
 Khyber PukhtoonKhwa Information &amp; Technology Project
 
-An advanced document management system for the KP IT Board, something that will replace conventional file management, increasing efficiency of the overall intergovernmental processes 100 times!
+A File Processing Automation system for the KP IT Board, something that will replace conventional file management, increasing efficiency of the overall intergovernmental processes 100 times!
 
 ## Civic Impact
 
