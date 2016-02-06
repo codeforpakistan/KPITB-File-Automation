@@ -12,6 +12,11 @@ An advanced document management system for the KP IT Board, something that will 
 -	We believe on customer satisfaction and this system will reduce burden from the employees. 
 -	It will help the internees of companies to know about their letter , application etc. 
 
+## Screenshots
+![alt tag](https://github.com/codeforpakistan/KPITB-File-Automation/blob/master/assets/images/1.PNG)
+![alt tag](https://github.com/codeforpakistan/KPITB-File-Automation/blob/master/assets/images/2.PNG)
+![alt tag](https://github.com/codeforpakistan/KPITB-File-Automation/blob/master/assets/images/3.PNG)
+
 ## Development 
 - The Project is Developed in Codeigniter Framework (PHP Framework)
 - With Jquery, Ajax and Bootstrap.
